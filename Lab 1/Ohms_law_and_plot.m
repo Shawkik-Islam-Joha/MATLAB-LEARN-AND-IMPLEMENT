@@ -7,7 +7,7 @@ I = V/R;
 %plotting the graph V vs I, Green line.
 plot(I,V,"g")
 grid on;
-
+%modifying the plot.
 title("V vs I")
 ylabel("Voltage(V)")
 xlabel("Current(I)")
