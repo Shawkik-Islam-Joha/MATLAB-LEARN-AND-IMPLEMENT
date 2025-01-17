@@ -4,7 +4,7 @@ R1 = 10;
 R2 = 20;
 R3 = 40;
 %Taking a vector V contaning values of V
-V = 1:0.5:100;   %V ranges is from 1 to 100 with 0.5 V interval
+V = 1:0.5:100;   %Range of V is from 1 to 100 with 0.5 V interval
 I1 = V/R1;
 I2 = V/R2;
 I3 = V/R3;

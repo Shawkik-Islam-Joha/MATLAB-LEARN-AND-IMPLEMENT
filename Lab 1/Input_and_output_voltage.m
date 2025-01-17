@@ -24,5 +24,5 @@ plot(Vin,Vout,"g");
 grid on;
 xlabel("Input Voltage(Vin)");
 ylabel("Output Voltage(Vout)");
-title("Vin vs Vout");
+title("Vout vs Vin");
 
