@@ -26,4 +26,4 @@ xlabel("Input Voltage(Vin)");
 ylabel("Output Voltage(Vout)");
 title("Vout vs Vin");
 
-saveas(gcf, 'Fig3.png');
+%saveas(gcf, 'Fig3.png');

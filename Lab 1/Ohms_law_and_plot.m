@@ -15,4 +15,4 @@ grid on;
 title("V vs I")
 ylabel("Voltage(V)")
 xlabel("Current(I)")
-saveas(gcf, 'Fig1.png');
+%saveas(gcf, 'Fig1.png');
