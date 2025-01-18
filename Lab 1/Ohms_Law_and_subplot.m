@@ -30,3 +30,5 @@ ylabel("Voltage V");
 xlabel("Current(I3)");
 grid on;
 
+saveas(gcf, 'Fig2.png');
+
