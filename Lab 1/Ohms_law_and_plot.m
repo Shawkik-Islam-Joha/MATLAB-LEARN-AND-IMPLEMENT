@@ -9,10 +9,10 @@ I1 = V/R1;
 I2 = V/R2;
 I3 = V/R3;
 %plotting the graph V vs I, Green line.
-plot(I1,V,"r",I2,V,"g",I3,V,"b")
+plot(V,I1,"r",V,I2,"g",V,I3,"b")
 grid on;
 %modifying the plot.
-title("V vs I")
-ylabel("Voltage(V)")
-xlabel("Current(I)")
+title("I vs V")
+xlabel("Voltage(V)")
+ylabel("Current(I)")
 %saveas(gcf, 'Fig1.png');
