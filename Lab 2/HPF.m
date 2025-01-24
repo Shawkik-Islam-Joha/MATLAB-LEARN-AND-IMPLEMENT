@@ -1,11 +1,11 @@
-%To design a LPF with cutoff frequency 124 kHz or 124000 Hz -
+%To design a RL HPF with cutoff frequency 124 kHz or 124000 Hz -
 fc = 124000;
-R = 3500;
-C = 1/(2*pi*R*fc);
+R = 3900;
+L = R/(2*pi*fc);
 %Then, in Transfer function-
-numerator = [0 0 1];
-denominator = [0 R*C 1];
-w = logspace(-15,20);
+numerator = [0 L 0];
+denominator = [0 L R];
+w = logspace(-15,30);
 h = freqs(numerator,denominator,w);
 f = w/(2*pi);
 magnitude = 20*log10(abs(h));
