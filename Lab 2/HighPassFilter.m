@@ -13,5 +13,5 @@ semilogx(f,magnitude,'g');
 grid on;
 xlabel('Frequency, Hz');
 ylabel('Gain, dB');
-xline(124000,'r','124kHz');
+xline(124000,'r','124 kHz');
 yline(-3,'b','-3 dB');
