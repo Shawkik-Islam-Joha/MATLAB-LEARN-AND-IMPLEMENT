@@ -40,3 +40,5 @@ figure;
 plot(X, Y, '.', 'MarkerSize', 1);
 axis equal off;
 title('Sierpinski Triangle (Chaos Game Method)');
+
+% Will fiddle with this code later
