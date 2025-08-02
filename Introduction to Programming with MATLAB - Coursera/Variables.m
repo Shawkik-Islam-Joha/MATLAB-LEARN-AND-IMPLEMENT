@@ -1,6 +1,7 @@
 % Variables contains values
 a = 5;          % Assigns the value 5 to variable a
 name = 'Joha';  % Assigns text (string) to variable name
+t = 1:1:1000;   % Values from 1 to 1000,steps 1
 
 % Vectors
 
