@@ -1,3 +1,32 @@
-
+# MATLAB autosave and backup files
 *.asv
-*.ini
+*.m~
+*.fig~
+*.mdl~
+*.slx~
+*.autosave
+
+# Compiled MEX files (all platforms)
+*.mex*
+
+# Simulink code generation
+slprj/
+sfprj/
+*_grt_rtw/
+
+# Matlab workspace/session
+*.mat
+*.mlx.autosave
+octave-workspace
+
+# Project settings (user/environment-specific)
+.project
+.simulink
+
+# Ignore settings and logs
+*.log
+*.bak
+
+# OS and editor files
+.DS_Store
+Thumbs.db
