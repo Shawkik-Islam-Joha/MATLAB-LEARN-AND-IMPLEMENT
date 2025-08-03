@@ -4,3 +4,8 @@ age = input('Enter your age: '); % Numeric input by default
 
 % Printing output
 fprintf('Hello, %s!\nYou are %d years old.\n', name, age);
+
+% Printing output in a variable
+
+str = sprintf('Hello, %s!\nYou are %d years old.\n', name, age);
+
