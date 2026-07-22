@@ -1,6 +1,9 @@
 % Question 1: Write a MATLAB program to generate and plot a discrete-time
-% sinusoidal signal with amplitude = 1, normalized frequency = 0.1
-% cycles/sample, phase = 0, for n = 0 to 20.
+% sinusoidal signal with 
+% amplitude = 1, 
+% normalized frequency = 0.1 cycles/sample
+% phase = 0, 
+% for n = 0 to 20.
 
 clc;
 clear;
