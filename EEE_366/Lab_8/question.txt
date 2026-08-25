@@ -1,2 +1,7 @@
-1. what is normalized or digital freq?
-2. 
+Question: what is normalized or digital freq?
+
+FIR Filter, Butterworth Filter
+IIR Filter
+
+Signal + noise then retrieval
+
