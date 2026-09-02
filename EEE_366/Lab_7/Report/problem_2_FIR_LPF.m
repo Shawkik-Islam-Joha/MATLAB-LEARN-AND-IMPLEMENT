@@ -42,36 +42,17 @@ ylabel('Magnitude');
 xlim([0 100]);
 grid on;
 
-fc = 10;
-wc = fc/(fs/2);
-
 figure;
 
-filter_order = 20;
-b = fir1(filter_order,wc,'low');
+f1 = 45;
+f2 = 55;
+wc = [f1 f2]/(fs/2);
+
+filter_order = 50;
+b = fir1(filter_order,wc,'stop');
 a = 1;
 
 subplot(3,2,1);
-filtered_z = filter(b,a,z);
-plot(sample,filtered_z);
-title('Filtered Signal Time Domain - Order 20');
-xlabel('Time(s)');
-ylabel('Amplitude');
-grid on;
-
-subplot(3,2,2);
-plot(abs(fft(filtered_z,1024)));
-title('Filtered Signal Frequency Domain - Order 20');
-xlabel('Frequency(Hz)');
-ylabel('Magnitude');
-xlim([0 100]);
-grid on;
-
-filter_order = 50;
-b = fir1(filter_order,wc,'low');
-a = 1;
-
-subplot(3,2,3);
 filtered_z = filter(b,a,z);
 plot(sample,filtered_z);
 title('Filtered Signal Time Domain - Order 50');
@@ -79,7 +60,7 @@ xlabel('Time(s)');
 ylabel('Amplitude');
 grid on;
 
-subplot(3,2,4);
+subplot(3,2,2);
 plot(abs(fft(filtered_z,1024)));
 title('Filtered Signal Frequency Domain - Order 50');
 xlabel('Frequency(Hz)');
@@ -88,10 +69,10 @@ xlim([0 100]);
 grid on;
 
 filter_order = 100;
-b = fir1(filter_order,wc,'low');
+b = fir1(filter_order,wc,'stop');
 a = 1;
 
-subplot(3,2,5);
+subplot(3,2,3);
 filtered_z = filter(b,a,z);
 plot(sample,filtered_z);
 title('Filtered Signal Time Domain - Order 100');
@@ -99,9 +80,29 @@ xlabel('Time(s)');
 ylabel('Amplitude');
 grid on;
 
-subplot(3,2,6);
+subplot(3,2,4);
 plot(abs(fft(filtered_z,1024)));
 title('Filtered Signal Frequency Domain - Order 100');
+xlabel('Frequency(Hz)');
+ylabel('Magnitude');
+xlim([0 100]);
+grid on;
+
+filter_order = 250;
+b = fir1(filter_order,wc,'stop');
+a = 1;
+
+subplot(3,2,5);
+filtered_z = filter(b,a,z);
+plot(sample,filtered_z);
+title('Filtered Signal Time Domain - Order 250');
+xlabel('Time(s)');
+ylabel('Amplitude');
+grid on;
+
+subplot(3,2,6);
+plot(abs(fft(filtered_z,1024)));
+title('Filtered Signal Frequency Domain - Order 250');
 xlabel('Frequency(Hz)');
 ylabel('Magnitude');
 xlim([0 100]);
